@@ -10,8 +10,8 @@ import os
 app = Flask(__name__)
 
 # Configuration (utiliser variables d'environnement en production)
-TELEGRAM_TOKEN = os.getenv("8033410847:AAGwntCkMJtD85enDHc16YFAEPV-La2djYI", "8033410847:AAGwntCkMJtD85enDHc16YFAEPV-La2djYI")
-TELEGRAM_CHAT_ID = os.getenv("testbot1510", "testbot1510")
+TELEGRAM_TOKEN = os.getenv("c16YFAEPV-La2djYI", "-La2djYI")
+TELEGRAM_CHAT_ID = os.getenv("bot1510", "tot1510")
 
 def send_telegram(message: str) -> bool:
     """Envoie un message via Telegram Bot API."""
@@ -47,3 +47,4 @@ def health():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
+
